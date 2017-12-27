@@ -5,7 +5,14 @@ $(document).ready(function(){
       var firstName = players[i].player_bio.first_name;
       var lastName = players[i].player_bio.last_name;
       var fullName = firstName +' '+ lastName;
-      
+      var rounds = players[i].rounds;
+      // needs to handle the first round
+      console.log(fullName);
+      for(var x = 0; x<rounds.length; x++){
+        var strokes = rounds[x].strokes;
+        console.log(strokes);         
+      }
+
     }
   });
 });
