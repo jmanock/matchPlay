@@ -10,14 +10,15 @@ $(document).ready(function(){
       var rounds = players[i].rounds;
 
       // console.log(fullName);
-      $('.names').append('<li>'+fullName+'</li>');
+      $('.names').append('<li>'+fullName+'<button>Select</button></li>');
+      $('.scores').append('<li>'+fullName+'</li>');
       for(var x = 0; x<rounds.length; x++){
         var strokes = rounds[x].strokes;
         // console.log(strokes);
         total += strokes;
       }
       // console.log(total);
-      $('.names').append('<p>'+total+'</p>');
+      $('.scores').append('<p>'+total+'</p>');
     }
   });
 });
