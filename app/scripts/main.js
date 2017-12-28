@@ -10,7 +10,7 @@ $(document).ready(function(){
       var rounds = players[i].rounds;
 
       // console.log(fullName);
-      $('.names').append('<li>'+fullName+'<button>Select</button></li>');
+      $('.names').append('<li>'+fullName+'<button onClick="options()">Select</button></li>');
       $('.scores').append('<li>'+fullName+'</li>');
       for(var x = 0; x<rounds.length; x++){
         var strokes = rounds[x].strokes;
@@ -22,3 +22,6 @@ $(document).ready(function(){
     }
   });
 });
+function options(){
+  console.log(document.getElementsByTagName('li'));
+}
